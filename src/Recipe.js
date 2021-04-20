@@ -25,11 +25,13 @@ return (
     <div className="recipes">
         <div className={style.recipe}>
             <h1 >{ Myrecipe.length > 0? Myrecipe[0].label:''}</h1>
+            <h2>Cuisine: { Myrecipe.length > 0? Myrecipe[0].cuisineType:''}</h2>
             <ol>
                 {Myrecipe.length > 0? Myrecipe[0].ingredients.map(ingredient =>(
                     <li>{ingredient.text}</li>
                 )): ''}
             </ol>
+            <h3>Calories: { Myrecipe.length > 0? Myrecipe[0].calories:''}</h3>
             <img className={style.image} src={Myrecipe.length > 0? Myrecipe[0].image: ''} alt=""/>
         </div>
     </div>
