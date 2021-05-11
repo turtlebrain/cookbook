@@ -2,7 +2,6 @@ import React from "react"
 import Recipe from "./Recipe";
 import './App.css';
 import Nav from './Nav';
-import Home from './Home';
 import CookBook from "./CookBook";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
